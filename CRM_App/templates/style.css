@@ -1,0 +1,16 @@
+button {
+	width:255px;
+    height:75px;
+    text-align:center;
+    line-height:1.0em;
+	font-family: 'TitilliumText22LRegular', Arial, sans-serif;
+	font-weight:bold;
+	font-size: 1.0em;
+	border-radius: 0px;
+    min-width:120px;
+    border: none;
+}
+
+button:hover {
+	background: #3E3E3E;
+}

@@ -1,0 +1,137 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile Page</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    
+  </head>
+  <STYLE>
+  A {
+  text-decoration: none;
+    }
+
+  button {
+	width:255px;
+    height:75px;
+    text-align:center;
+    line-height:1.0em;
+	font-family: 'TitilliumText22LRegular', Arial, sans-serif;
+	font-weight:bold;
+	font-size: 1.0em;
+	border-radius: 0px;
+    min-width:120px;
+    border: none;
+}
+
+button:hover {
+	background: #3E3E3E;
+}
+
+
+   </STYLE>
+  <body>
+    
+    <section class="hero is-success is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title" style = "color:white;font-size:150%;font-family:cursive;">
+            <center>{{g.user.username}}'s Profile</center>
+			
+          </h1>
+          <h2 class="subtitle" style = "color:white;font-size:150%;font-family:cursive;">
+            <center>You are user number #{{g.user.id}}</center>
+          </h2>
+		 
+        </div>
+      </div>
+<main>
+  <div id="buttons" style ="font-family:cursive;font-size:110%;">
+    <a href="https://app.powerbi.com/reportEmbed?reportId=971dbdde-3bcb-48bc-a1e1-e949ae46c101&autoAuth=true&ctid=8c25f501-4f7e-4b41-9aa6-bdd5f317d4e4&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWluZGlhLWNlbnRyYWwtYS1wcmltYXJ5LXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9"> <button type="menu" class="btn btn-outline effect-up">Generate Report</t></t></t></t></t></t></t></t></t></t></t></t></t></t></t></t></t></t></t></t></t></t></t></t></t></t></t></t></t></t></t></t></button></a> 
+    <form method ="post"><button type="menu" class="btn btn-outline effect-up" name="movie_button" value="movie">Movie Recommendation</button></a></form>
+    <form method ="post" action="/basket"><button type="menu" class="btn btn-outline effect-up" name="basket_button" value="basket">Basket Analysis</button></form>
+    <a href="https://app.powerbi.com/reportEmbed?reportId=90593135-3529-464c-8e42-5c1824cee545&autoAuth=true&ctid=8c25f501-4f7e-4b41-9aa6-bdd5f317d4e4&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWluZGlhLWNlbnRyYWwtYS1wcmltYXJ5LXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9"> <button type="menu" class="btn btn-outline effect-up">Customer Life Time Value</button></a>
+    <a href="https://churn--predic.herokuapp.com/"><button type="menu"  class="btn btn-outline effect-up">Churn Prediction</button></a>
+    <a href="https://app.powerbi.com/reportEmbed?reportId=88e7dec6-5965-474c-a043-e6d8cee16299&autoAuth=true&ctid=8c25f501-4f7e-4b41-9aa6-bdd5f317d4e4&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWluZGlhLWNlbnRyYWwtYS1wcmltYXJ5LXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9"><button type="menu"  class="btn btn-outline effect-up">Sales Demand Forecasting</button></a>
+  </div>
+</main>
+<style>
+*:focus {
+  outline: none;
+}
+
+body, html {
+  font-family: 'Montserrat';
+  margin: 0;
+  padding: 10;
+  background-color: #5CDB95;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: white;
+  max-width: 500px;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  padding: 40px;
+}
+
+#buttons {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/*** Buttons style ***/
+
+.btn {
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  border-radius: 3000px;
+  font-weight: 900;
+  text-align: center;
+  margin: 30px;
+  transition: all .3s ease;
+}
+
+
+.btn-outline {
+  border: 3px solid #84fab0;
+  color: #5CDB95;
+}
+
+
+/*** Animations ***/
+.effect-scale:hover {
+  transform: scale(1.1);
+}
+
+.effect-up:hover {
+  transform: translate(0, -10px);
+}
+
+@keyframes link-anim {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btn-icon:hover > span {
+  background-position: 200px 0;
+}
+
+.effect-icon:hover > i {
+  transform: rotate(360deg);
+}
+
+</style>
