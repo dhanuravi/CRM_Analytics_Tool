@@ -38,7 +38,7 @@ class Results(Table):
 app = Flask(__name__)
 app.secret_key = 'somesecretkeythatonlyishouldknow'
 
-df = pd.read_csv("C:/Users/HP/Documents/Vstrialcodefiles/CRM_App/datasets/results/Association_result_for_online_reatil_data.csv")
+df = pd.read_csv("datasets/results/Association_result_for_online_reatil_data.csv")
 data=df[['antecedents', 'consequents']]
 itemset_count = str(int(df['itemset_count'].iloc[800]))
 rules_count = str(int(df['rules_count'].iloc[800]))
