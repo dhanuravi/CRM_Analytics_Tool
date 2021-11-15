@@ -12,16 +12,16 @@
             background-image: url("https://toscon14.files.wordpress.com/2014/05/seminar-presenter-pic.jpg");
             background-repeat: no-repeat;
             background-size: 450px 450px; 
-            background-position: center center;
+            background-position: right center;
             } 
         </style>  
     </head>
 
-    <body bgcolor="Lavender">
+    <body bgcolor="Lavender"><center>
         {% extends "template.html" %}
         {% block content %}
             <h1><font color="midnightblue"><strong>Here are the top-20 movies that you'll most probably like:</strong></font></h1>
             <p>{{ table }}</p>
-        {% endblock %}
+        {% endblock %}</center>
     </body>
 </html>
