@@ -2,3 +2,5 @@ flask
 pandas
 numpy
 flask_table
+uwsgi
+mlxtend
