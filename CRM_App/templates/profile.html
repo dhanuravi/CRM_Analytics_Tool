@@ -12,7 +12,7 @@
     }
 
   button {
-	width:255px;
+	width:355px;
     height:75px;
     text-align:center;
     line-height:1.0em;
@@ -22,19 +22,39 @@
 	border-radius: 0px;
     min-width:120px;
     border: none;
+  
 }
 
 button:hover {
 	background: #3E3E3E;
 }
 
+.glow {
+  font-family: cursive;
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px blue, 0 0 20px rgb(255, 255, 255), 0 0 30px #00e67b, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px rgb(255, 255, 255), 0 0 30px #28c09a, 0 0 40px #914dff, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
 
    </STYLE>
   <body>
     
     <section class="hero is-success is-fullheight">
+      <center><h1 class = "glow" > CRM Analytics tool</h1></center>
       <div class="hero-body">
         <div class="container">
+          
           <h1 class="title" style = "color:white;font-size:150%;font-family:cursive;">
             <center>{{g.user.username}}'s Profile</center>
 			
