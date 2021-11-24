@@ -68,7 +68,7 @@ def login():
             return redirect(url_for('profile'))
 
         else:
-            return render_template('login.html',info="Invalid Password",info1="Contact admin")
+            return render_template('login.html',info="Invalid Password!",info1="Contact Admin")
 
     return render_template('login.html')
 
