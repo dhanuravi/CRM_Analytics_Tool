@@ -67,7 +67,8 @@ def login():
             session['user_id'] = user.id
             return redirect(url_for('profile'))
 
-        return redirect(url_for('login'))
+        else:
+            return render_template('login.html',info="Invalid Password",info1="Contact admin")
 
     return render_template('login.html')
 
